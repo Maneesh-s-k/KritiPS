@@ -12,10 +12,7 @@ const ProfileProject = (project) => {
   console.log({ project });
   return (
     <div className="ProfileProjectOverlay">
-      <img
-        className="profileProjectImage"
-        src="https://images.unsplash.com/photo-1707070530152-1fc8f45ec3c0?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      />
+      <img className="profileProjectImage" src={project.project.projectImage} />
       <div className="profileProjectName">{project.project.name}</div>
       <button
         className="profileProjectDisplay"
