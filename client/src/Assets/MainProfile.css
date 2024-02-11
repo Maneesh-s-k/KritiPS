@@ -9,6 +9,7 @@
   gap: 1em;
   cursor: default;
   font-family: "Work Sans", sans-serif;
+  border: 1px solid black;
 }
 .MainProfileImage {
   height: 6em;

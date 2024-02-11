@@ -16,7 +16,7 @@ const ProfileProject = (project) => {
       <div className="profileProjectName">{project.project.name}</div>
       <button
         className="profileProjectDisplay"
-        onClick={() => handleClick(project)}
+        onClick={() => handleClick(project.project)}
       >
         View More
       </button>
