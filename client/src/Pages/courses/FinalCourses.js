@@ -2,6 +2,7 @@ import React, { useState, useEffect, lazy } from "react";
 import CoursesPage from "./CoursesPage";
 import MainProfile from "../../Assets/MainProfile";
 import "./courses.css";
+import LoadingAnimation from "../../Assets/LoaderAnimation/LoaderAnimation";
 
 function FinalCourses() {
   const [courses, setCourses] = useState([]);
@@ -27,7 +28,7 @@ function FinalCourses() {
   }, []);
 
   if (loading) {
-    return <div>loading...</div>;
+    return <LoadingAnimation/>;
   }
   return (
     <div className="finalCourses-Overlay">

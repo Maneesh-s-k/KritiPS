@@ -155,7 +155,7 @@ const Maincontent = ({ userinfo, courses, projects, collabs }) => {
         <div className="profile-right-collab">
           <div className="collab-heading">Collaboration Requests</div>
 
-          <div className="collaboration-req">
+          <div className="collaboration-req-list">
             {collabs.map((collab, index) => (
               <CollabCard collab={collab} />
             ))}

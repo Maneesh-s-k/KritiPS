@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Maincontent from './Maincontent'
+import LoadingAnimation from '../../Assets/LoaderAnimation/LoaderAnimation';
 // import MainNavbar from '../../Assets/MainNavbar'
 // import './profilepage.css'
 // import Footer from '../Footer/Footer'
@@ -63,9 +64,7 @@ const Profilepage = ({}) => {
   }, []);
   if(loading){
     return(
-      <div>
-        loading...
-      </div>
+      <LoadingAnimation/>
     )
   }
     return (

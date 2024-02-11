@@ -3,7 +3,10 @@ import "./Projecthead.css";
 let statusMessage = "Completed";
 
 const Projecthead = (project) => {
-  if (project.Status === 1) {
+
+
+
+  if (project.completed === "false") {
     statusMessage = "Ongoing";
   }
 
@@ -15,7 +18,7 @@ const Projecthead = (project) => {
       </div>
       <div class="projectStatus">
         
-        {project.completed ? "Completed": "Ongoing"}
+        {statusMessage}
         
       </div>
     </div>

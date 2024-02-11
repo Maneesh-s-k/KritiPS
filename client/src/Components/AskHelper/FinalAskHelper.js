@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import AskHelperMain from "./AskHelperMain";
+import LoadingAnimation from "../../Assets/LoaderAnimation/LoaderAnimation";
 
 const FinalAskHelperMain = () => {
   const [loading, setLoading] = useState(true);
@@ -27,9 +28,7 @@ const FinalAskHelperMain = () => {
 
   if(loading){
     return (
-      <div>
-        loading...
-      </div>
+      <LoadingAnimation/>
     )
   }
   return <AskHelperMain data={data} setData={setData} />;

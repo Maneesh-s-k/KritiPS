@@ -2,7 +2,6 @@ import "./ProjectDisplay.css";
 import ProjectCrousel from "./components/ProjectCrousel";
 import Projecthead from "./components/Projecthead";
 import ProjectAccordian from "./components/ProjectAccordian";
-// import MainNavbar from "../../Assets/MainNavbar";
 import MainOtherProfile from "../../Assets/MainOtherProfile";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -15,6 +14,8 @@ const ProjectDisplay = ({ project }) => {
   const location = useLocation();
   console.log(location.state.project);
   project = location.state.project;
+  console.log('asdasdsadasd')
+  console.log(project);
   return (
     <div class="overlayProjectDisplay">
       <div className="projectDisplayBody">
@@ -25,8 +26,7 @@ const ProjectDisplay = ({ project }) => {
         </div>
         <div className="projectDisplayConnect">
           <MainOtherProfile user_id={project.userId} />
-          {project.userId !== localStorage.getItem("user_id") &&
-          project.completed === false ? (
+          {project.completed === "false" ? (
             <button onClick={handleClick} className="projectDisplayCollab">
               Collab
             </button>

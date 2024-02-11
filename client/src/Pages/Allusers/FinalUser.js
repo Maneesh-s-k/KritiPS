@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import AllUsers from './AllUsers';
+import LoadingAnimation from '../../Assets/LoaderAnimation/LoaderAnimation';
 
 function FinalUser() {
   
@@ -23,9 +24,7 @@ function FinalUser() {
 
     if(loading){
         return (
-            <div>
-                loading...
-            </div>
+            <LoadingAnimation/>
         )
     }
   return (

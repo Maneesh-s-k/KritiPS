@@ -10,9 +10,9 @@ export default function ProjectCard({ project, user }) {
     console.log("clicked " + project.id);
     navigate("/ProjectDisplay", { state: { project: project } });
   }
-  let projectStatusMessage = "Ongoing";
-  if (project.completed) {
-    projectStatusMessage = "Completed";
+  let projectStatusMessage = "Completed";
+  if (project.completed==="false") {
+    projectStatusMessage = "Ongoing";
   }
   console.log(project);
   return (
