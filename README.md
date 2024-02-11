@@ -42,9 +42,6 @@ Navigate to client and server and install the node packages used in the applicat
 $ npm install
 ```
 
-## Demo
-
-This application is deployed on Vercel Please check it out :smile: [here](https://mern-store-gold.vercel.app).
 
 ## Install
 
